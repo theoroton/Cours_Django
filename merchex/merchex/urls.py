@@ -19,5 +19,8 @@ from listings import views # Ajout de la vue créée
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello) # URL vers la vue hello
+    path('hello/', views.hello), # URL vers la vue hello
+    path('about-us/', views.about), # URL vers à propos
+    path('contact-us/', views.contact), # URL vers le formulaire de contact
+    path('listings/', views.listings), # URL vers le listing
 ]
