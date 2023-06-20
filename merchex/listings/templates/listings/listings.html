@@ -1,0 +1,11 @@
+<html>
+    <head><title>Merchex</title></head>
+    <body>
+        <h1>Affiches ({{ listings|length }} affiches) :</h1>
+        <ul>
+            {% for listing in listings %} <!-- For dans le html -->
+            <li>{{ listing.title }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

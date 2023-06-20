@@ -1,0 +1,26 @@
+<html>
+    <head><title>Merchex</title></head>
+    <body>
+        <h1>Hello Django !</h1>
+
+        <p>Mes groupes {{ bands|length }} :</p>
+        <ul>
+            {% for b in bands %} <!-- For dans le html -->
+            <li>{{ b.name|upper }}</li>
+            {% endfor %}
+        </ul>
+
+        <br>
+
+        <p> J'ai                        <!-- If dans le html -->                
+            {% if bands|length < 5 %}
+                peu de
+            {% elif bands|length < 10 %}
+                quelques
+            {% else %}
+                beaucoup de
+            {% endif %}
+                groupes préférés.
+        </p>
+    </body>
+</html>

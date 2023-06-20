@@ -4,11 +4,19 @@ from django.http import HttpResponse # Import nécessaire
 from listings.models import Band # Modèle Band importé
 from listings.models import Listing # Modèle Listing importé
 
+from django.shortcuts import render # Render pour les fichiers templates html
+
 
 # Fonction pour une première page
 def hello(request):
-    bands = Band.objects.all()
+    bands = Band.objects.all() # Récupère les groupes
 
+    return render(request, 
+    'listings/hello.html', 
+    {'bands': bands}) # Récupération du template (render crée un objet HttpResponse)
+
+
+    ''' ANCIEN CODE
     # Réponse HTTP à afficher retourné
     return HttpResponse(f"""
         <h1>Hello Django !</h1>
@@ -19,33 +27,26 @@ def hello(request):
             <li>{bands[2].name}</li>
         </ul>
     """)
+    '''
 
 
 
 # Fonction pour la page à propos
 def about(request):
-    return HttpResponse('<h1>A propos</h1> <p>Nous adorons merch !</p>')
+    return render(request, 'listings/about.html')
 
 
 
 # Fonction pour le formulaire de contact
 def contact(request):
-    return HttpResponse('<h1>Formulaire de contact</h1>')
+    return render(request, 'listings/contact.html')
 
 
 
 # Fonction pour la page de listing
 def listings(request):
-    listings = Listing.objects.all()
+    listings = Listing.objects.all() # Récupère les affiches
 
-    response = """<h1>Listings</h1>
-                  <ul>
-                """
-
-    for listing in listings:
-        response += f"<li>{listing.title}</li>"
-
-
-    response += "<ul>"
-
-    return HttpResponse(response)
+    return render(request, 
+    'listings/listings.html', 
+    {'listings': listings})
