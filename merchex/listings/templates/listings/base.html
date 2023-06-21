@@ -1,0 +1,14 @@
+{% load static %} <!-- Charge la balise static -->
+
+<html>
+    <head>
+        <title>Merchex</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'listings/styles.css' %}" />
+    </head>
+
+    <body>
+
+        {% block content %}{% endblock %} <!-- Où sera le code HTML qui héritera de la base -->
+
+    </body>
+</html>
