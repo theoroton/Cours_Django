@@ -11,4 +11,5 @@ __Partie 2.4 :__ Séparez la logique de l'application de la présentation avec u
 __Partie 2.5 :__ Ajoutez structure et style à votre site grâce à un gabarit de base, du css et des fichiers statiques (Mise en place d'un gabarit de base et d'un fichier de style css) => https://github.com/theoroton/Cours_Django/tree/6b2dbf0e6e8e50459769ea9416fd4fdc61ed08e6  
 __Partie 2.6 :__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4283  
 
-__Partie 3.1 :__ En cours
+__Partie 3.1 :__ Capturez des données avec des modèles et des champs (Augmentation des modèles avec de nouveaux attributs) => https://github.com/theoroton/Cours_Django/tree/d4b164a8478e08a24359156776b8160397ac0417  
+__Partie 3.2 :__ En cours
