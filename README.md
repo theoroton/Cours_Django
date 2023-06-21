@@ -12,4 +12,5 @@ __Partie 2.5 :__ Ajoutez structure et style à votre site grâce à un gabarit d
 __Partie 2.6 :__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4283  
 
 __Partie 3.1 :__ Capturez des données avec des modèles et des champs (Augmentation des modèles avec de nouveaux attributs) => https://github.com/theoroton/Cours_Django/tree/d4b164a8478e08a24359156776b8160397ac0417  
-__Partie 3.2 :__ En cours
+__Partie 3.2 :__ Effectuez des opérations CRUD dans l'administration de Django (Opérations CRUD avec l'interface administration) => https://github.com/theoroton/Cours_Django/tree/57e3c9a67b92ecb294cf1349305b4f46b0aaf591  
+__Partie 3.3 :__ En cours
