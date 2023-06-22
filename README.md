@@ -13,4 +13,5 @@ __Partie 2.6 :__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-a
 
 __Partie 3.1 :__ Capturez des données avec des modèles et des champs (Augmentation des modèles avec de nouveaux attributs) => https://github.com/theoroton/Cours_Django/tree/d4b164a8478e08a24359156776b8160397ac0417  
 __Partie 3.2 :__ Effectuez des opérations CRUD dans l'administration de Django (Opérations CRUD avec l'interface administration) => https://github.com/theoroton/Cours_Django/tree/57e3c9a67b92ecb294cf1349305b4f46b0aaf591  
-__Partie 3.3 :__ En cours
+__Partie 3.3 :__ Créez des relations de type Many-to-One avec une clé étrangère (Ajout de clé étrangère) => https://github.com/theoroton/Cours_Django/tree/0da2c9b673204dc511d0d52075ffb27138f795ec
+__Partie 3.4 :__ En cours
