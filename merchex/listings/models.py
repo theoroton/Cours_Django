@@ -46,3 +46,7 @@ class Listing(models.Model):
         null=True
     ) # Année de l'article -> valeur min et max & peut être null
     type = models.fields.CharField(choices=Type.choices, max_length=2) # Type de l'article -> type défini dans le choix
+
+    band = models.ForeignKey(Band, null=True, on_delete=models.SET_NULL) # Mise en place clé étrangère avec modèle Band, null pour dire qu'une annonce peut être lié à aucun groupe, on_delete change l'état de la clé lorsque le groupe lié est supprimé
+
+

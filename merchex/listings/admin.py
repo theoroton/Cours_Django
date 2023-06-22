@@ -10,7 +10,7 @@ class BandAdmin(admin.ModelAdmin):
 
 # Change l'affichage du modèle Listing dans l'interface admin
 class ListingAdmin(admin.ModelAdmin):
-    list_display = ('title', 'sold', 'year', 'type')
+    list_display = ('title', 'sold', 'year', 'type', 'band')
 
 
 
