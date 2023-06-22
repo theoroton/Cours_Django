@@ -21,6 +21,7 @@ class Band(models.Model):
     active = models.fields.BooleanField(default=True) # Attribut groupe actif : Boolean Field -> valeur par défaut True
     official_homepage = models.fields.URLField(null=True, blank=True) # Attribut page internet : URL Field -> autorise les valeurs NULL et permet de recevoir un texte vide
 
+    #like_new = models.fields.BooleanField(default=False) # Migration non désirée
 
     def __str__(self):
         return f'{self.name}'
