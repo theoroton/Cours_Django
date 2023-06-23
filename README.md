@@ -17,4 +17,5 @@ __Partie 3.3 :__ Créez des relations de type Many-to-One avec une clé étrang�
 __Partie 3.4 :__ Surmontez les pièges courants de la migration (Gestion des conflits de migration) => https://github.com/theoroton/Cours_Django/tree/fff202e7907a60aae090ed3653462199ea1b3a32  
 __Quiz 3.5:__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4285 
 
-__Partie 4.1 :__ En cours
+__Partie 4.1 :__ Lisez des données dans une vue en liste et une vue détaillée (Création de vue détaillée) => https://github.com/theoroton/Cours_Django/tree/0e7c75350a88aebe94512c76bd656f0cbf2e88f3  
+__Partie 4.2 :__ En cours
