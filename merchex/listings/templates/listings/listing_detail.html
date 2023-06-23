@@ -1,0 +1,22 @@
+{% extends 'listings/base.html' %} <!-- Fait en sorte que ce template hérite du template de base -->
+
+{% block content %} <!-- Début du bloc qui sera ajouté à la base -->
+
+<h2>{{ listing.title }}</h2>
+
+<ul>
+    <li>Vendu : {{ listing.sold|yesno }}</li>
+    {% if listing.year %}
+    <li>Année d'acquisition : {{ listing.year }}</li>
+    {% endif %}
+    <li>Type : {{ listing.get_type_display }}</li>
+    {% if listing.band %}
+    <li>Groupe : <a href="{% url 'band-detail' listing.band.id %}">{{ listing.band.name }}</a></li>
+    {% endif %}
+</ul>
+   
+<p>{{ listing.description }}</p>
+    
+<a href="{% url 'listing-list' %}">Retour aux annonces</a> <!-- Lien pour revenir à la liste des annonces -->
+
+{% endblock %} <!-- Fin du bloc -->

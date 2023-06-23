@@ -8,6 +8,11 @@
 
     <body>
 
+        <nav>
+            <a href="{% url 'band-list' %}">Groupes</a>
+            <a href="{% url 'listing-list' %}">Annonces</a>
+        </nav>
+
         {% block content %}{% endblock %} <!-- Où sera le code HTML qui héritera de la base -->
 
     </body>

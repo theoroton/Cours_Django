@@ -5,7 +5,7 @@
         <h1>Affiches ({{ listings|length }} affiches) :</h1>
         <ul>
             {% for listing in listings %} <!-- For dans le html -->
-            <li>{{ listing.title }}</li>
+            <li><a href="{% url 'listing-detail' listing.id %}">{{ listing.title }}</a></li>
             {% endfor %}
         </ul>
 

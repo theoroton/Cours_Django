@@ -5,12 +5,12 @@ from listings.models import Listing # Permet de gérer le modèle Listing en ét
 
 # Change l'affichage du modèle Band dans l'interface admin
 class BandAdmin(admin.ModelAdmin):
-    list_display = ('name', 'year_formed', 'genre')
+    list_display = ('id', 'name', 'year_formed', 'genre')
 
 
 # Change l'affichage du modèle Listing dans l'interface admin
 class ListingAdmin(admin.ModelAdmin):
-    list_display = ('title', 'sold', 'year', 'type', 'band')
+    list_display = ('id', 'title', 'sold', 'year', 'type', 'band')
 
 
 

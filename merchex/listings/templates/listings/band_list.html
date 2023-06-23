@@ -2,26 +2,13 @@
 
 {% block content %} <!-- Début du bloc qui sera ajouté à la base -->
 
-<h1>Hello Django !</h1>
+<h1>Groupes</h1>
 
 <p>Mes groupes {{ bands|length }} :</p>
 <ul>
     {% for b in bands %} <!-- For dans le html -->
-    <li>{{ b.name|upper }}</li>
+    <li><a href="{% url 'band-detail' b.id %}">{{ b.name|upper }}</a></li> <!-- Ajout d'un lien pour la liste des groupes -->
     {% endfor %}
 </ul>
-
-<br>
-
-<p> J'ai                        <!-- If dans le html -->                
-    {% if bands|length < 5 %}
-        peu de
-    {% elif bands|length < 10 %}
-        quelques
-    {% else %}
-        beaucoup de
-    {% endif %}
-        groupes préférés.
-</p>
 
 {% endblock %} <!-- Fin du bloc -->

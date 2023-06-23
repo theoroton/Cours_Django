@@ -19,8 +19,10 @@ from listings import views # Ajout de la vue créée
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello), # URL vers la vue hello
+    path('bands/', views.band_list, name='band-list'), # URL vers la vue bands
+    path('bands/<int:id>/', views.band_detail, name='band-detail'), # URL pour un groupe précis
     path('about-us/', views.about), # URL vers à propos
     path('contact-us/', views.contact), # URL vers le formulaire de contact
-    path('listings/', views.listings), # URL vers le listing
+    path('listings/', views.listings, name='listing-list'), # URL vers le listing
+    path('listings/<int:id>/', views.listing_detail, name='listing-detail') # URL pour une annonce précise
 ]
