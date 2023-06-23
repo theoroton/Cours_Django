@@ -18,4 +18,5 @@ __Partie 3.4 :__ Surmontez les pièges courants de la migration (Gestion des con
 __Quiz 3.5:__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4285 
 
 __Partie 4.1 :__ Lisez des données dans une vue en liste et une vue détaillée (Création de vue détaillée) => https://github.com/theoroton/Cours_Django/tree/0e7c75350a88aebe94512c76bd656f0cbf2e88f3  
-__Partie 4.2 :__ En cours
+__Partie 4.2 :__ Récupérez des données de l'utilisateur avec Django Forms (Création d'un formulaire et page de redirection) => https://github.com/theoroton/Cours_Django/tree/8d25ee6fac8929c2298250f7067f712966722e50  
+__Partie 4.3 :__ En cours
