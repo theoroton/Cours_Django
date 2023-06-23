@@ -70,6 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'merchex.wsgi.application'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
