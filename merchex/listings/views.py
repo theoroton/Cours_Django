@@ -8,6 +8,8 @@ from django.shortcuts import render # Render pour les fichiers templates html
 from django.core.mail import send_mail # Librairie pour envoyer un mail
 
 from listings.forms import ContactUsForm # Formulaire de contact
+from listings.forms import BandForm # Formulaire pour ajouter un groupe
+from listings.forms import ListingForm # Formulaire pour ajouter une annonce
 
 from django.shortcuts import redirect # Redirection vers une autre page
 
@@ -44,6 +46,30 @@ def band_detail(request, id):
     return render(request,
                   'listings/band_detail.html',
                   {'band': band, 'listings_for_band': listings_for_band})
+
+
+
+# Fonction pour ajouter un groupe
+def band_create(request):
+    # Si c'est une requête GET
+    if request.method == 'GET':
+        form = BandForm() # Crée un nouveau formulaire
+
+    # Si c'est une requête POST
+    else:
+        form = BandForm(request.POST) # Formulaire avec les données
+
+        # Si le formulaire est valide
+        if form.is_valid():
+            band = form.save() # Récupère les informations du formulaire et crée un objet Band à partir
+
+            # Va vers le détail du nouveau groupe à l'aide de l'id du groupe créé
+            return redirect('band-detail', band.id)
+
+    return render(request, 
+                  'listings/add_band.html',
+                  {'form': form})
+
 
 
 
@@ -106,3 +132,25 @@ def listing_detail(request, id):
     return render(request,
                   'listings/listing_detail.html',
                   {'listing': listing})
+
+
+# Fonction pour ajouter une annonce
+def listing_create(request):
+    # Si c'est une requête GET
+    if request.method == 'GET':
+        form = ListingForm() # Crée un nouveau formulaire
+
+    # Si c'est une requête POST
+    else:
+        form = ListingForm(request.POST) # Formulaire avec les données
+
+        # Si le formulaire est valide
+        if form.is_valid():
+            listing = form.save() # Récupère les informations du formulaire et crée un objet Listing à partir
+
+            # Va vers le détail de la nouvelle annonce à l'aide de son id
+            return redirect('listing-detail', listing.id)
+
+    return render(request, 
+                  'listings/add_listing.html',
+                  {'form': form})
