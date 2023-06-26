@@ -2,6 +2,8 @@
 
 {% block content %} <!-- Début du bloc qui sera ajouté à la base -->
 
+<br>
+<a href="{% url 'band-update' band.id %}">Modifier</a>
 
 <h2>{{ band.name }}</h2>
 

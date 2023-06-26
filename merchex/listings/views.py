@@ -71,6 +71,28 @@ def band_create(request):
                   {'form': form})
 
 
+# Fonction pour modifier un groupe
+def band_update(request, id):
+    band = Band.objects.get(id=id)
+
+    # Si c'est la méthode GET
+    if request.method == 'GET':
+        form = BandForm(instance=band) # Crée un formulaire à l'aide de l'instance de Band
+    
+    # Si c'est la méthodfe POST
+    else:
+        form = BandForm(request.POST, instance=band)
+
+        # Si le formulaire est valide
+        if form.is_valid():
+            form.save() # Sauvegarde le groupe
+            return redirect('band-detail', band.id)
+
+
+    return render(request,
+                  'listings/update_band.html',
+                  {'band': band, 'form': form})
+
 
 
 # Fonction pour la page à propos
@@ -154,3 +176,26 @@ def listing_create(request):
     return render(request, 
                   'listings/add_listing.html',
                   {'form': form})
+
+
+# Fonction pour modifier une annonce
+def listing_update(request, id):
+    listing = Listing.objects.get(id=id) # Récupère l'annonce
+
+    # Si c'est une requête GET
+    if request.method == 'GET':
+        form = ListingForm(instance=listing) # Crée le formulaire
+    
+    # Si c'est une requête POST
+    else:
+        form = ListingForm(request.POST, instance=listing) # Crée le formulaire
+
+        # Si le formulaire est valide
+        if form.is_valid():
+            listing = form.save() # Récupère les informations du formulaire et met à jour l'objet Listing
+            return redirect('listing-detail', listing.id)
+    
+
+    return render(request,
+                  'listings/update_listing.html',
+                  {'listing': listing, 'form': form})

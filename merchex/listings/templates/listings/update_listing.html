@@ -1,0 +1,15 @@
+{% extends 'listings/base.html' %} <!-- Fait en sorte que ce template hérite du template de base -->
+
+{% block content %} <!-- Début du bloc qui sera ajouté à la base -->
+
+<h1>Modifier l'annonce</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Modifier">
+</form>
+
+<a href="{% url 'listing-detail' listing.id %}">Retour</a>
+
+{% endblock %}
