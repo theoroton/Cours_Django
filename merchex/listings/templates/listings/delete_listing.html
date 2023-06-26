@@ -1,0 +1,14 @@
+{% extends 'listings/base.html' %} <!-- Fait en sorte que ce template hérite du template de base -->
+
+{% block content %} <!-- Début du bloc qui sera ajouté à la base -->
+
+<h1>Supprimer l'annonce {{ listing.title }} ?</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Supprimer">
+</form>
+
+<a href="{% url 'listing-detail' listing.id %}">Retour</a>
+
+{% endblock %}

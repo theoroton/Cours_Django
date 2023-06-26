@@ -94,6 +94,20 @@ def band_update(request, id):
                   {'band': band, 'form': form})
 
 
+# Fonction pour supprimer un groupe
+def band_delete(request, id):
+    band = Band.objects.get(id=id)
+
+    # Si c'est la méthode POST
+    if request.method == 'POST':
+        band.delete() # Supprime le groupe
+        return redirect('band-list')
+
+
+    return render(request,
+                  'listings/delete_band.html',
+                  {'band': band})
+
 
 # Fonction pour la page à propos
 def about(request):
@@ -199,3 +213,18 @@ def listing_update(request, id):
     return render(request,
                   'listings/update_listing.html',
                   {'listing': listing, 'form': form})
+
+
+# Fonction pour supprimer une annonce
+def listing_delete(request, id):
+    listing = Listing.objects.get(id=id)
+
+    # Si c'est la méthode POST
+    if request.method == 'POST':
+        listing.delete() # Supprime l'annonce
+        return redirect('listing-list')
+
+
+    return render(request,
+                  'listings/delete_listing.html',
+                  {'listing': listing}) 
