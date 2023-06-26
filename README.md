@@ -20,5 +20,5 @@ __Quiz 3.5 :__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-ave
 __Partie 4.1 :__ Lisez des données dans une vue en liste et une vue détaillée (Création de vue détaillée) => https://github.com/theoroton/Cours_Django/tree/0e7c75350a88aebe94512c76bd656f0cbf2e88f3  
 __Partie 4.2 :__ Récupérez des données de l'utilisateur avec Django Forms (Création d'un formulaire et page de redirection) => https://github.com/theoroton/Cours_Django/tree/8d25ee6fac8929c2298250f7067f712966722e50  
 __Partie 4.3 :__ Créez des objets de modèle avec un ModelForm (Ajout de formulaires pour créer des objets) => https://github.com/theoroton/Cours_Django/tree/d74c15005802888a0c5994b58f92151116729c0c  
-__Partie 4.4 :__ Supprimez des objets en toute sécurité avec confirmation de l'utilisateur (Opérations de mises à jour des objets) => https://github.com/theoroton/Cours_Django/tree/6afc0c481a49a91bec5e3b9fdecc79c5532771cb  
+__Partie 4.4 :__ Mettez à jour un objet modèle avec un ModelForm (Opérations de mises à jour des objets) => https://github.com/theoroton/Cours_Django/tree/6afc0c481a49a91bec5e3b9fdecc79c5532771cb  
 __Partie 4.5 :__ En cours
