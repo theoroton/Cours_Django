@@ -21,4 +21,5 @@ __Partie 4.1 :__ Lisez des données dans une vue en liste et une vue détaillée
 __Partie 4.2 :__ Récupérez des données de l'utilisateur avec Django Forms (Création d'un formulaire et page de redirection) => https://github.com/theoroton/Cours_Django/tree/8d25ee6fac8929c2298250f7067f712966722e50  
 __Partie 4.3 :__ Créez des objets de modèle avec un ModelForm (Ajout de formulaires pour créer des objets) => https://github.com/theoroton/Cours_Django/tree/d74c15005802888a0c5994b58f92151116729c0c  
 __Partie 4.4 :__ Mettez à jour un objet modèle avec un ModelForm (Opérations de mises à jour des objets) => https://github.com/theoroton/Cours_Django/tree/6afc0c481a49a91bec5e3b9fdecc79c5532771cb  
-__Partie 4.5 :__ En cours
+__Partie 4.5 :__ Supprimez des objets en toute sécurité avec confirmation de l'utilisateur (Opérations de suppression des objets) => https://github.com/theoroton/Cours_Django/tree/6bfff7f7ce332cbe0c17f4d11799d78dbaf18461  
+__Quiz 4.6 :__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4286
