@@ -15,7 +15,7 @@ __Partie 3.1 :__ Capturez des données avec des modèles et des champs (Augmenta
 __Partie 3.2 :__ Effectuez des opérations CRUD dans l'administration de Django (Opérations CRUD avec l'interface administration) => https://github.com/theoroton/Cours_Django/tree/57e3c9a67b92ecb294cf1349305b4f46b0aaf591  
 __Partie 3.3 :__ Créez des relations de type Many-to-One avec une clé étrangère (Ajout de clé étrangère) => https://github.com/theoroton/Cours_Django/tree/0da2c9b673204dc511d0d52075ffb27138f795ec  
 __Partie 3.4 :__ Surmontez les pièges courants de la migration (Gestion des conflits de migration) => https://github.com/theoroton/Cours_Django/tree/fff202e7907a60aae090ed3653462199ea1b3a32  
-__Quiz 3.5:__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4285 
+__Quiz 3.5 :__ Quiz => https://openclassrooms.com/fr/courses/7172076-debutez-avec-le-framework-django/exercises/4285 
 
 __Partie 4.1 :__ Lisez des données dans une vue en liste et une vue détaillée (Création de vue détaillée) => https://github.com/theoroton/Cours_Django/tree/0e7c75350a88aebe94512c76bd656f0cbf2e88f3  
 __Partie 4.2 :__ Récupérez des données de l'utilisateur avec Django Forms (Création d'un formulaire et page de redirection) => https://github.com/theoroton/Cours_Django/tree/8d25ee6fac8929c2298250f7067f712966722e50  
